@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/jquery-3.3.1.js"></script>
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="/js/swip.js"></script>
+
+    <!--Fonts-->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!--End Fonts-->
+
+    <!--CSS / Stylesheet-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/shop.css">
+
+    <!--Logo and Heading-->
+    <title>Welcome!</title>
+    <link rel="shortcut icon" href="src/nefoli-logo-transparency.png" type="image/x-icon">
+</head>
+<body>
+    <!--Preloader (Loading Screen)-->
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="/index.html">
+        <img src="/src/nefoli-logo.png" width="55" height="55" alt="" style="border-radius: 60px;" >
+      </a>
+    <a class="navbar-brand" href="/index.html" style="color: White;">NEFOLI</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/about.html">About Us</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Minecraft</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/pages/shop.html">Shop</a>
+          </li>
+      </ul>
+    </div>
+  </nav>>
+    
+  <!--Main Content 1-->
+  <div class="main">
+    <h2 style="text-align: center;">Hello👋!</h2>
+    <p style="text-align: center;"> This is the website of your very dear youtube <span><code style="color: red;">NEFOLI!</code></span>,
+      So as said I am a Youtuber and Streamer. Some of you <br> might have seen mine editing in various field such as tiktok
+    youtube or maybe facebook. So want to know more about me...!
+    <br> Click the About section in navigation bar.</p>
+    <img src="/src/500k_banner.jpg" style="width:60%; height:90%; display: block; margin-left: auto; margin-right: auto; width: 50%;">
+  </div>
+  <!--Main Content 1-->
+ 
+      <!--Main Content 2-->
+
+    <!---JS-->
+<script>
+    $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+    });
+
+    $('.nav-link').on('click', function() {
+      $('.active-link').removeClass('active-link');
+      $(this).addClass('active-link');
+    });
+</script>
+</body>
+</html>
